@@ -13,7 +13,6 @@ public class Pemilihan {
         System.out.print("Masukkan nilai UAS: ");
         double uas = input.nextDouble();
 
-        // Validasi nilai
         if (!BarierNilai(tugas) || !BarierNilai(kuis) || !BarierNilai(uts) || !BarierNilai(uas)) {
             System.out.println("Nilai tidak valid");
             System.exit(0);
@@ -46,7 +45,7 @@ public class Pemilihan {
     }
 
     public static String konversiNilai(double nilai) {
-        // Konversi nilai menjadi grade
+        
         if ((nilai >= 80) && (nilai <= 100)) {
             return "A";
         } else if ((nilai >= 73) && (nilai < 80)) {
