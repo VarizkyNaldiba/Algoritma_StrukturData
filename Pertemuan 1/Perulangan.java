@@ -5,9 +5,9 @@ public class Perulangan {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Masukkan NIM: ");
-        int NIM = input.nextInt(); 
+        double NIM = input.nextDouble(); 
 
-        int n = NIM % 100; 
+        double n = NIM % 100; 
 
         if (n < 10) {
             n += 10;
