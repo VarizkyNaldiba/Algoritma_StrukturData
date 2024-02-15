@@ -12,12 +12,14 @@ public class Array {
         System.out.println("====");
 
         for (int i = 0; i < matakuliah.length; i++) {
+
             System.out.print("Masukkan Nilai " + matakuliah[i] + " : ");
             nilai[i] = sc.nextInt();
 
             if (nilai[i] < 0 || nilai[i] > 100) {
                 System.out.println("Nilai tidak VALID");
             }
+
         }
 
         int jumlahMatKul = matakuliah.length;
@@ -63,9 +65,9 @@ public class Array {
 
         double Ip = jumNilaiMatkul / jumSKS;
 
-        System.out.printf("| %-20s| %-10s\t| %-15s| %-20s |%n", "MATA KULIAH", "NILAI MATKUL", "NILAI HURUF",
+        System.out.printf("| %-20s| %-10s\t| %-15s| %-20s |%n", "MATA KULIAH", " NILAI ", "NILAI HURUF",
                 "BOBOT NILAI");
-    
+
         for (int i = 0; i < nilai.length; i++) {
             System.out.printf("| %-20s| %-10d\t| %-15s| %-20.2f |%n", matakuliah[i], nilai[i], nilaiHuruf[i],
                     bobotNilai[i]);
