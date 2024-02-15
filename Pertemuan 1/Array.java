@@ -13,6 +13,7 @@ public class Array {
 
         for (int i = 0; i < matakuliah.length; i++) {
 
+            
             System.out.print("Masukkan Nilai " + matakuliah[i] + " : ");
             nilai[i] = sc.nextInt();
 
@@ -55,6 +56,7 @@ public class Array {
         int jumSKS = 0;
         double jumNilaiMatkul = 0;
 
+        System.out.println("Masukkan SKS per MATKUL");
         for (int i = 0; i < sks.length; i++) {
             System.out.print("Masukkan SKS " + matakuliah[i] + " : ");
             sks[i] = sc.nextInt();
@@ -73,6 +75,6 @@ public class Array {
                     bobotNilai[i]);
         }
 
-        System.out.printf("IP: %.2f%n", Ip);
+        System.out.printf("IP : %.2f%n  ", Ip);
     }
 }
