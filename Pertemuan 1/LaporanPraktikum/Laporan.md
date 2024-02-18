@@ -2,7 +2,7 @@
 
 ## Pemilihan
 Hasil Output dari Kode Program Pemilihan
-![alt text](Pemilihan.png)>
+![alt text](Pemilihan.png)
 
 ## Perulangan
 Hasil Output dari Kode Program Perulangan
