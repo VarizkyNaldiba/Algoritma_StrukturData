@@ -16,6 +16,18 @@ Hasil Output dari Kode Program Array
 Hasil Output dari Kode Program Fungsi
 ![alt text](Fungsi.png)
 
-## 
+## Tugas 1
+Hasil Output dari Kode Program Plat Mobil
+![alt text](Tugas1.png)
 
+## Tugas 2
+Hasil Output dari Kode Program Keceaptan Jarak Waktu
 
+### Kecepatan
+![alt text](Kecepatan.png)
+
+### Jarak
+![alt text](Jarak.png)
+
+### Waktu
+![alt text](Waktu.png)
