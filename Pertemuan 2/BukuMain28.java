@@ -17,4 +17,4 @@ public class BukuMain28 {
         bk2.terjual(11);
         bk2.tampilInformasi();
     }
-}
+ }

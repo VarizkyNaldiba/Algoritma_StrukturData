@@ -52,16 +52,33 @@ menggunakan sintaks "namaObjek.namaAtribut" <br>
 - Method 
 menggunakan sintaks ""namaObjek.namaMetode()" <br>
 
-3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?
+3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?<br>
+- Karena ada perubahan nilai pada atribut objek "bk1"
 
-## Percobaan 3
+## Percobaan 3 Membuat Konstruktor
 
 ![alt text](Percobaan3.png)
 
 ### Pertanyaan 
 
-1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!
-2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?
-3. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
-4. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses secara berurutan? Jelaskan alasannya!
-5. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor berparameter dari class Buku!
+1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!<br>
+![alt text](3.1.png)<br>
+
+2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut? <br>
+
+mendeklarasikan sebuah konstruktor untuk class Buku28 <br>
+
+3. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian! <br>
+
+Hasilnya Error Karena Konsruktur default penting dalam mengidentifikasi kelas <br>
+
+4. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses secara berurutan? Jelaskan alasannya!<br>
+
+Tidak harus, karena setiap method memiliki tugas masing masing jika tidak di tugas kan ke program tertentu maka tidak akan berjalan method nya, walaupun tidak berurutan method tidak akan terpengaruh sama sekali <br>
+
+5. Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor berparameter dari class Buku! <br>
+
+![alt text](saya.png)<br>
+
+## Latihan Praktikum
+

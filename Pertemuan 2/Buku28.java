@@ -6,6 +6,7 @@ public class Buku28 {
         Buku28() {
             
         }
+
         void tampilInformasi() {
         
         System.out.println("Judul :" + judul);
@@ -39,6 +40,25 @@ public class Buku28 {
         this.stok = stok;
         harga = har;
         
+    }
+    public static void main(String[] args) {
+        
+    Buku28 bukuVarizkyNaldiba = new Buku28("Zelectra" , "Varizky" , 30, 100, 40000);
+    bukuVarizkyNaldiba.tampilInformasi();
+
+    }
+
+    void hitungHargaTotal() {
+        int total;
+        total = harga * jml;
+    }
+
+    void hitungDiskon() {
+
+    }
+
+    void hitungHargaBayar () {
+
     }
 
 }
