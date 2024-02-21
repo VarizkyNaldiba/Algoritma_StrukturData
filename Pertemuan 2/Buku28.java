@@ -1,14 +1,9 @@
 public class Buku28 {
-    
-        String judul, pengarang;
-        int halaman, stok, harga;
 
-        Buku28() {
-            
-        }
+    String judul, pengarang;
+    int halaman, stok, harga, jml;
 
-        void tampilInformasi() {
-        
+    void tampilInformasi() {
         System.out.println("Judul :" + judul);
         System.out.println("Pengarang :" + pengarang);
         System.out.println("Jumlah Halaman : " + halaman);
@@ -16,21 +11,26 @@ public class Buku28 {
         System.out.println("Harga :" + harga);
     }
 
-    void terjual (int jml) {
+    void terjual(int jml) {
+        this.jml = jml;
         do {
-            if (stok > 0 ) {
+            if (stok > 0) {
                 stok -= jml;
-            } continue;
-
+            }
+            System.out.println("Stok habis");
         } while (jml > 0);
     }
 
-    void restock (int jml) {
+    void restock(int jml) {
         stok -= jml;
-        
     }
-    void gantiHarga (int hrg) {
+
+    void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    public Buku28() {
+
     }
 
     public Buku28(String jud, String pg, int hal, int stok, int har) {
@@ -39,26 +39,31 @@ public class Buku28 {
         halaman = hal;
         this.stok = stok;
         harga = har;
-        
-    }
-    public static void main(String[] args) {
-        
-    Buku28 bukuVarizkyNaldiba = new Buku28("Zelectra" , "Varizky" , 30, 100, 40000);
-    bukuVarizkyNaldiba.tampilInformasi();
-
     }
 
     void hitungHargaTotal() {
-        int total;
-        total = harga * jml;
+        int total = harga * jml;
+        System.out.println("Harga Total: " + total);
     }
 
-    void hitungDiskon() {
+    double hitungDiskon(double total) {
+        double diskon = 0;
 
+        if (total > 150000) {
+            diskon = total * 0.12;
+        } else if (total >= 75000 && total <= 150000) {
+            diskon = total * 0.05;
+        } else {
+            System.out.println("Anda tidak mendapatkan diskon.");
+        }
+
+        return diskon;
     }
 
-    void hitungHargaBayar () {
-
+    void hitungHargaBayar() {
+        int total = harga * jml;
+        double diskon = hitungDiskon(total);
+        double hargaBayar = total - diskon;
+        System.out.println("Harga Bayar Setelah Diskon: " + hargaBayar);
     }
-
 }
