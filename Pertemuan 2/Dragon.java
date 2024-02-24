@@ -1,14 +1,19 @@
 public class Dragon {
     int x, y, width = 3, height = 5;
 
-    public Dragon(int horizontal, int vertikal) {
+    public Dragon() {
+        
+    }
+
+    public Dragon(int horizontal, int vertical) {
         x = horizontal;
-        y = vertikal;
+        y = vertical;
     }
 
     void moveLeft() {
         x -= 1;
         if (x < 0) {
+            x = 0;
             detectCollision();
         }
     }
@@ -16,6 +21,7 @@ public class Dragon {
     void moveRight() {
         x += 1;
         if (x >= width) {
+            x = width - 1;
             detectCollision();
         }
     }
@@ -23,6 +29,7 @@ public class Dragon {
     void moveUp() {
         y -= 1;
         if (y < 0) {
+            y = 0;
             detectCollision();
         }
     }
@@ -30,6 +37,7 @@ public class Dragon {
     void moveDown() {
         y += 1;
         if (y >= height) {
+            y = height - 1;
             detectCollision();
         }
     }
@@ -40,20 +48,5 @@ public class Dragon {
 
     void detectCollision() {
         System.out.println("GAME OVER");
-        System.out.println("HIYAAA SKILL ISSUE");
-    }
-
-    public static void main(String[] args) {
-        Dragon gerak = new Dragon(0, 0);
-        gerak.printPosition();
-        gerak.moveRight();
-        gerak.moveRight();
-        gerak.moveLeft();
-        gerak.moveLeft();
-        gerak.moveUp();
-        gerak.moveUp();
-        gerak.moveDown();
-        gerak.moveDown();
-        gerak.printPosition();
     }
 }

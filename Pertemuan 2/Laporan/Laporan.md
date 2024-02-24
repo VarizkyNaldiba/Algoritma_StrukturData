@@ -82,3 +82,15 @@ Tidak harus, karena setiap method memiliki tugas masing masing jika tidak di tug
 
 ## Latihan Praktikum
 
+1. Buku 
+- Method hitungHargaTotal
+![alt text](image.png)
+- Method hitungDiskon
+![alt text](image-1.png)
+-Method hitungHargaBayar
+![alt text](image-2.png)
+
+2. Dragon
+
+- Hasil Run <br>
+![alt text](image-3.png)
