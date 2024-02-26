@@ -82,3 +82,19 @@ pgArray[5].sisi = 20;
 
 ## 3.4 Percobaan 3: Penambahan Operasi Matematika di Dalam Method
 ### 3.4.1 Langkah-langkah Percobaan
+### 3.4.2 Verifikasi Hasil Percobaan
+![alt text](image-7.png)
+### 3.4.3 Pertanyaan
+3.4.3 Pertanyaan
+1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!
+2. Jika diketahui terdapat class Segitiga seperti berikut ini:
+![alt text](image-8.png)
+Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi.
+3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring)
+4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing atributnya sebagai berikut:
+- sgArray ke-0 alas: 10, tinggi: 4
+- sgArray ke-1 alas: 20, tinggi: 10
+- sgArray ke-2 alas: 15, tinggi: 6
+- sgArray ke-3 alas: 25, tinggi: 10
+5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().
+
