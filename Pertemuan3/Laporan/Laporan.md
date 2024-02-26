@@ -24,3 +24,53 @@ NIM     : 2341720243
 5. Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2?
 > Karena Encapsulation , konsep dalam OOP java. walaupun bisa di gabung class dan main di pisah agar main mudah di baca dan class persegipanjang bisa digunakan kembali oleh program lain
 
+## 3.3 Percobaan 2: Menerima Input Isian Array Menggunakan Looping
+### 3.3.1 Langkah-langkah Percobaan
+### 3.3.2 Verifikasi Hasil Percobaan
+![alt text](image-4.png)
+### 3.3.3 Pertanyaan
+1. Apakah array of object dapat diimplementasikan pada array 2 Dimensi?
+> Array of object dapat diimplementasikan pada array 2 dimensi. Hal ini memungkinkan untuk menyimpan data yang kompleks dalam struktur data yang terstruktur.
+2. Jika jawaban soal no satu iya, berikan contohnya! Jika tidak, jelaskan!
+```
+class PersegiPanjang {
+  public int panjang;
+  public int lebar;
+}
+
+public class Main {
+  public static void main(String[] args) {
+    PersegiPanjang[][] ppArray = new PersegiPanjang[3][2];
+
+    ppArray[0][0] = new PersegiPanjang();
+    ppArray[0][0].panjang = 110;
+    ppArray[0][0].lebar = 30;
+
+    ppArray[0][1] = new PersegiPanjang();
+    ppArray[0][1].panjang = 80;
+    ppArray[0][1].lebar = 40;
+
+    ppArray[1][0] = new PersegiPanjang();
+    ppArray[1][0].panjang = 100;
+    ppArray[1][0].lebar = 20;
+
+    ppArray[1][1] = new PersegiPanjang();
+    ppArray[1][1].panjang = 90;
+    ppArray[1][1].lebar = 50;
+
+    // Mencetak nilai
+    for (int i = 0; i < ppArray.length; i++) {
+      for (int j = 0; j < ppArray[i].length; j++) {
+        System.out.println("Persegi Panjang ke - " + (i + 1) + "," + (j + 1) + ", panjang : " + ppArray[i][j].panjang + ", lebar : " + ppArray[i][j].lebar);
+      }
+    }
+  }
+}
+```
+
+3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode dibawah ini akan memunculkan error saat dijalankan. Mengapa?
+>
+4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!
+>
+5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
+>
