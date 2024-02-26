@@ -69,8 +69,16 @@ public class Main {
 ```
 
 3. Jika diketahui terdapat class Persegi yang memiliki atribut sisi bertipe integer, maka kode dibawah ini akan memunculkan error saat dijalankan. Mengapa?
->
+![alt text](image-5.png)
+> karena kode program keliru harusnya 
+```
+pgArray[5] = new Persegi ();
+pgArray[5].sisi = 20;
+```
 4. Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!
->
+![alt text](image-6.png)
 5. Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
->
+> jika memiliki array ppArray yang berisi objek-objek Objek, dan melakukan ppArray[0] = new Objek() diikuti dengan ppArray[i] = ppArray[0], sekarang kedua indeks 0 dan i akan merujuk pada objek yang sama di memori. hal ini bermanfaat jika ingin mengakses objek yang sma pada program tanpa membuat salinan baru dari objek, namun duplikasi ini harus sesuai dengan logika yang terdapat pada program agar tidak terjadi error
+
+## 3.4 Percobaan 3: Penambahan Operasi Matematika di Dalam Method
+### 3.4.1 Langkah-langkah Percobaan
