@@ -6,14 +6,14 @@ public class ArrayObject {
         PersegiPanjang[] ppArray = new PersegiPanjang[3];
         Scanner sc = new Scanner(System.in);
 
-        for (int i = ; i < 3; i++) {
+        for (int i = 0 ; i < 3; i++) {
             ppArray[i] = new PersegiPanjang();
             System.out.println("Persegi Panjang ke-" + i);
             System.out.println("Masukkan Panjang : " );
             ppArray[i].panjang = sc.nextInt();
             System.out.println("Masukkan Lebar : ");
             ppArray[i].lebar = sc.nextInt();
-            
+
         }
 
         System.out.println("Persegi Panjang ke - 1, panjang : " + ppArray[0].panjang + ", lebar : " + ppArray[0].lebar);
