@@ -180,3 +180,6 @@ for (int i = 0; i < sgArray.length; i++) {
 > Hasil Output
 ![alt text](image-13.png)
 
+### 3.5.3. Modifikasi program Latihan no.2 di atas, sehingga bisa digunakan untuk menghitung rata-rata IPK, serta menampilkan data mahasiswa dengan IPK terbesar! (gunakan method untuk masing-masing proses tersebut)
+### Jawaban no 3
+> Hasil Output
