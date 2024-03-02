@@ -58,7 +58,6 @@ public class Main {
     ppArray[1][1].panjang = 90;
     ppArray[1][1].lebar = 50;
 
-    // Mencetak nilai
     for (int i = 0; i < ppArray.length; i++) {
       for (int j = 0; j < ppArray[i].length; j++) {
         System.out.println("Persegi Panjang ke - " + (i + 1) + "," + (j + 1) + ", panjang : " + ppArray[i][j].panjang + ", lebar : " + ppArray[i][j].lebar);
@@ -87,14 +86,93 @@ pgArray[5].sisi = 20;
 ### 3.4.3 Pertanyaan
 3.4.3 Pertanyaan
 1. Dapatkah konstruktor berjumlah lebih dalam satu kelas? Jelaskan dengan contoh!
+> Sebuah kelas dapat memiliki lebih dari satu konstruktor. Ini disebut sebagai overloading konstruktor. Konstruktor berbeda dalam sebuah kelas dapat memiliki jumlah parameter yang berbeda atau tipe parameter yang berbeda.
+```
+public class Balok {
+    public int panjang;
+    public int lebar;
+    public int tinggi;
+    
+    public Balok(int p, int l, int t ) {
+        panjang = p;
+        lebar = l;
+        tinggi = t;
+
+    }
+
+    public int hitungVolume() {
+        return panjang * lebar * tinggi;
+    }
+}
+```
 2. Jika diketahui terdapat class Segitiga seperti berikut ini:
 ![alt text](image-8.png)
-Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi.
+- Tambahkan konstruktor pada class Segitiga tersebut yang berisi parameter int a, int t yang masing-masing digunakan untuk mengisikan atribut alas dan tinggi.
+```
+package Laporan;
+
+public class Segitiga {
+    public int alas;
+    public int tinggi;
+    public double miring;
+    
+ 
+    public Segitiga (int a, int t) {
+        alas = a;
+        tinggi = t;
+    }
+    }
+```
+
 3. Tambahkan method hitungLuas() dan hitungKeliling() pada class Segitiga tersebut. Asumsi segitiga adalah segitiga siku-siku. (Hint: Anda dapat menggunakan bantuan library Math pada Java untuk mengkalkulasi sisi miring)
+```
+double hitungLuas() {
+        double luas = alas * tinggi * 1/2;     
+        return luas ;
+    }
+
+    public double hitungSisiMiring() {
+
+        double alas2 = Math.pow(alas,2);
+        double tinggi2 = Math.pow(tinggi, 2);
+        miring = Math.sqrt(alas2 + tinggi2);
+        return miring;
+    }
+
+    double hitungKeliling() {
+    double keliling = alas + miring + tinggi;
+        return keliling;
+    }
+```
 4. Pada fungsi main, buat array Segitiga sgArray yang berisi 4 elemen, isikan masing-masing atributnya sebagai berikut:
 - sgArray ke-0 alas: 10, tinggi: 4
 - sgArray ke-1 alas: 20, tinggi: 10
 - sgArray ke-2 alas: 15, tinggi: 6
 - sgArray ke-3 alas: 25, tinggi: 10
-5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().
+```
+public static void main(String[] args) {
+        Segitiga[] sgArray = new Segitiga[4];
 
+        sgArray[0] = new Segitiga(10, 4);
+        sgArray[1] = new Segitiga(20, 10);
+        sgArray[2] = new Segitiga(15, 6);
+        sgArray[3] = new Segitiga(25, 10);
+        }
+```
+5. Kemudian menggunakan looping, cetak luas dan keliling dengan cara memanggil method hitungLuas() dan hitungKeliling().
+```
+for (int i = 0; i < sgArray.length; i++) {
+            System.out.println("Segitiga " + (i+1) + ", Luas permukaan: " + sgArray[i].hitungLuas() + ", Keliling: "+ sgArray[i].hitungKeliling());
+        }
+```
+## 3.5 Latihan Praktikum
+  1. Buatlah program yang dapat menghitung luas permukaan dan volume bangun ruang kerucut, limas segi empat sama sisi, dan bola. Buatlah 3 (tiga) class sesuai dengan jumlah jenis bangun ruang. Buatlah satu main class untuk membuat array of objects yang menginputkan atribut-atribut yang ada menggunakan konstruktor semua bangun ruang tersebut. Dengan ketentuan,
+  -  Buat looping untuk menginputkan masing-masing atributnya, kemudian tampilkan luas permukaan dan volume dari tiap jenis bangun ruang tersebut.
+  - Pada kerucut, inputan untuk atribut hanya jari-jari dan sisi miring
+  - Pada limas segi empat sama sisi, inputan untuk atribut hanya panjang sisi alas dan tinggi limas
+  - Pada bola, inpuntan untuk atribut hanya jari-jari
+#### Jawaban no 1
+> Hasil Output
+![alt text](image-12.png)
+
+2. Sebuah kampus membutuhkan program untuk menampilkan informasi mahasiswa berupa nama, nim, jenis kelamin dan juga IPK mahasiswa. Program dapat menerima input semua informasi tersebut, kemudian menampilkanya kembali ke user. Implementasikan program tersebut jika dimisalkan terdapat 3 data mahasiswa yang tersedia.
