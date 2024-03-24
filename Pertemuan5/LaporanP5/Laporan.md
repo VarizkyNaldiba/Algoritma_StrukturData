@@ -162,3 +162,5 @@ Tentukan:
 > A. top_acceleration tertinggi menggunakan Divide and Conquer!
 > B. top_acceleration terendah menggunakan Divide and Conquer!
 > C. Rata-rata top_power dari seluruh mobil menggunakan Brute Force!
+##### Hasil Output
+![alt text](image-6.png)
