@@ -16,11 +16,19 @@ public class MhsMain {
         list.tambah(m4);
         list.tambah(m5);
     
-        System.out.println("Data Mahasiswa sebelum sorting = ");
+        System.out.println("Data Mahasiswa sebelum sorting ");
         list.tampil();
     
-        System.out.println("Data Mahasiswa setelah sorting = ");
+        System.out.println("Data Mahasiswa setelah sorting ");
         list.tampil();   
-        list.bubbleSort();
+        list.bubbleSort(); 
+        
+        System.out.println("Data Mahasiswa setelah sorting asc berdasarkan ipk ");
+        list.selectionSort(); 
+        list.tampil();   
+
+        System.out.println("Data Mahasiswa setelah sorting asc berdasarkan ipk ");
+        list.insertionSort(); 
+        list.tampil(); 
     }
 }
