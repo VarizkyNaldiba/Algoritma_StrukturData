@@ -1,21 +1,12 @@
 package Jobsheet6.Latihan;
 
 public class Hotel {
-    Hotel rooms;
+    String nama, kota;
+    int harga;
+    byte bintang;
 
-    void tambahHotel(Hotel H) {
 
-    }
+    void Hotel(String n, String k, int h, byte b) {
 
-    void tampilAll() {
-
-    }
-
-    void bubbleSort() {
-
-    }
-
-    void selectionSort() {
-        
     }
 }
