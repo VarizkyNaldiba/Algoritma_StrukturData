@@ -19,7 +19,7 @@ Untuk apakah proses tersebut?
 ![alt text](image-2.png)
 > untuk melakukan pertukran indeks ke variable sementara 'temp' jika nilai ipk  ke-[j] > ipk ke-[j-1]
 3. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
-![alt text](image-3.png)
+> ![alt text](image-3.png)
 - a. Apakah perbedaan antara kegunaan perulangan i dan perulangan j?
 > Pada perulangan i digunakan untuk menentukan awal dan akhir elemen yang akan di eksekusi sedangkan perulangan j berfungsi untuk membandingkan antar 2 elemen yg berdekatan dan menukar sekaligus menempatkan ke variabel sementara 'temp'
 - b. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?
@@ -34,8 +34,8 @@ Untuk apakah proses tersebut?
 ![alt text](image-4.png)
 #### 5.3.3 Pertanyaan
 1. Di dalam method selection sort, terdapat baris program seperti di bawah ini:
-![alt text](image-5.png)
-Untuk apakah proses tersebut, jelaskan!
+> ![alt text](image-5.png)
+- Untuk apakah proses tersebut, jelaskan!
 > untuk mengurutkan listMhs dari terkecil jadi idxmin berfungsi menyimpan elemen i, lalu di setiap perulangan akan di lakukan j=i+1 agar tidak terjadi perulangan yang sama, dan jika memenuhi syarat if nya maka idxmin akan di replace dengan j
 
 ## 5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort
@@ -63,11 +63,12 @@ Sebuah platform travel yang menyediakan layanan pemesanan kebutuhan travelling s
 2. Rating bintang penginapan dari bintang tertinggi (5) ke terendah (1)
 Buatlah proses sorting data untuk kedua filter tersebut dengan menggunakan algoritma bubble sort dan selection sort.
 ![alt text](image-7.png)
-> Berikut Hasil Outputnya
-![alt text](image-8.png)
+
+- Berikut Hasil Outputnya
+> ![alt text](image-8.png)
 - Sebelum Sorting
-![alt text](image-11.png)
+>![alt text](image-11.png)
 - Sorting Harga
-![alt text](image-12.png)
+>![alt text](image-12.png)
 - osrting Bintang
-![alt text](image-13.png)
+>![alt text](image-13.png)
