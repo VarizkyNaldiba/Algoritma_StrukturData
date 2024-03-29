@@ -1,5 +1,7 @@
 package Jobsheet6;
+
 import java.util.Scanner;
+
 public class Mahasiswa {
     String nama;
     int thnMasuk, umur;

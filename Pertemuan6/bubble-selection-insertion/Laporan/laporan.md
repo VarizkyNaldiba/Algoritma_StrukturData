@@ -58,4 +58,16 @@ void insertionSort() {
 ```
 
 ## Latihan Praktikum
-
+Sebuah platform travel yang menyediakan layanan pemesanan kebutuhan travelling sedang mengembangkan backend untuk sistem pemesanan/reservasi akomodasi (penginapan), salah satu fiturnya adalah menampilkan daftar penginapan yang tersedia berdasarkan pilihan filter yang diinginkan user. Daftar penginapan ini harus dapat disorting berdasarkan
+1. Harga dimulai dari harga termurah ke harga tertinggi.
+2. Rating bintang penginapan dari bintang tertinggi (5) ke terendah (1)
+Buatlah proses sorting data untuk kedua filter tersebut dengan menggunakan algoritma bubble sort dan selection sort.
+![alt text](image-7.png)
+> Berikut Hasil Outputnya
+![alt text](image-8.png)
+- Sebelum Sorting
+![alt text](image-11.png)
+- Sorting Harga
+![alt text](image-12.png)
+- osrting Bintang
+![alt text](image-13.png)
