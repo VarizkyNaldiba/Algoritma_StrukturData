@@ -80,6 +80,15 @@ class PencarianBuku28 {
             System.out.println(" Data " + x + " Tidak Ditemukan");
         }        
     }
+
+    Buku FindBuku(int cari) {
+        for (int j = 0; j < listBK.length; j++) {
+            if (listBK[j].kodeBuku == cari) {
+                return listBK[j]; 
+            }
+        }
+        return null;
+    }
 }
 
  class main {
@@ -127,6 +136,8 @@ class PencarianBuku28 {
         int posisi  = data.FindSeqSearch(cari);
         data.tampilPosisi(cari, posisi);
         data.tampilData(cari, posisi);
+        Buku dataBuku = data.FindBuku(cari);
+        dataBuku.tampilDataBuku();
     }
 }
 
