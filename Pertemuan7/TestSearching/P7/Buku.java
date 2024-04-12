@@ -7,29 +7,25 @@ public class Buku {
     String judulBuku;
     int tahunTerbit;
     String pengarang;
-    int stock;    
+    int stock;
 
-
-
-public Buku(int k, String j, int t, String p, int s) {
-    kodeBuku = k;
-    judulBuku = j;
-    tahunTerbit = t;
-    pengarang = p;
-    stock = s;
-
-}
-
-void tampilDataBuku()  {
-    System.out.println("===============");
-    System.out.println("Kode Buku = " + kodeBuku);
-    System.out.println("judul Buku =  " + judulBuku );
-    System.out.println("Tahun = " + tahunTerbit);
-    System.out.println("Pengarang = " + pengarang);
-    System.out.println("Stock = " + stock);
-
+    public Buku(int k, String j, int t, String p, int s) {
+        kodeBuku = k;
+        judulBuku = j;
+        tahunTerbit = t;
+        pengarang = p;
+        stock = s;
     }
- }
+
+    void tampilDataBuku() {
+        System.out.println("===============");
+        System.out.println("Kode Buku = " + kodeBuku);
+        System.out.println("judul Buku =  " + judulBuku);
+        System.out.println("Tahun = " + tahunTerbit);
+        System.out.println("Pengarang = " + pengarang);
+        System.out.println("Stock = " + stock);
+    }
+}
 
 class PencarianBuku28 {
     Buku listBK[] = new Buku[5];
@@ -38,60 +34,76 @@ class PencarianBuku28 {
     void tambah(Buku m) {
         if (idx < listBK.length) {
             listBK[idx] = m;
-            idx++;            
+            idx++;
         } else {
             System.out.println(" Data Sudah Penuh");
         }
     }
+
     void tampil() {
         for (Buku m : listBK) {
             m.tampilDataBuku();
             System.out.println("---------------------");
-            }
         }
-    int FindSeqSearch (int cari) {
-        int posisi = -1 ; 
+    }
+
+    int FindSeqSearch(int cari) {
+        int posisi = -1;
         for (int j = 0; j < listBK.length; j++) {
             if (listBK[j].kodeBuku == cari) {
                 posisi = j;
                 break;
             }
         }
-        return posisi; 
-        }
-    
-    void tampilPosisi(int cari, int pos) {
-        if(pos!= -1) {
-            System.out.println(" Data : " + cari + " ditemukan pada indeks " + pos);
+        return posisi;
+    }
 
-        } else { 
+    void tampilPosisi(int cari, int pos) {
+        if (pos != -1) {
+            System.out.println(" Data : " + cari + " ditemukan pada indeks " + pos);
+        } else {
             System.out.println(" Data " + cari + " Tidak Ditemukan ");
         }
     }
 
-    void tampilData (int x, int pos){
+    void tampilData(int x, int pos) {
         if (pos != -1) {
-            System.out.println("Kode Buku \t : " + x );
+            System.out.println("Kode Buku \t : " + x);
             System.out.println("Judul \t\t : " + listBK[pos].judulBuku);
             System.out.println("Tahun Terbit\t : " + listBK[pos].tahunTerbit);
             System.out.println("Pengarang \t\t : " + listBK[pos].pengarang);
             System.out.println("Stock  \t : " + listBK[pos].stock);
         } else {
             System.out.println(" Data " + x + " Tidak Ditemukan");
-        }        
+        }
     }
 
     Buku FindBuku(int cari) {
         for (int j = 0; j < listBK.length; j++) {
             if (listBK[j].kodeBuku == cari) {
-                return listBK[j]; 
+                return listBK[j];
             }
         }
         return null;
     }
+
+    int FindBinarySearch(int cari, int left, int right) {
+        int mid;
+        if (right >= left) {
+            mid = (right) / 2;
+            if (cari == listBK[mid].kodeBuku) {
+                return (mid);
+            } else if (listBK[mid].kodeBuku > cari) {
+                return FindBinarySearch(cari, left, mid);
+            } else {
+                return FindBinarySearch(cari, mid, right);
+            }
+        }
+        return -1;
+    }
 }
 
- class main {
+class main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -111,11 +123,11 @@ class PencarianBuku28 {
             System.out.print("Tahun Terbit \t : ");
             int tahunTerbit = s.nextInt();
             System.out.print("Pengarang \t : ");
-            String pengarang =  s1.nextLine();
+            String pengarang = s1.nextLine();
             System.out.print(" Stock \t \t : ");
             int stock = s.nextInt();
 
-            Buku m = new Buku(kodeBuku, judulBuku, tahunTerbit, pengarang, stock );
+            Buku m = new Buku(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
             data.tambah(m);
 
         }
@@ -131,14 +143,13 @@ class PencarianBuku28 {
         System.out.println("Pencarian Data : ");
         System.out.println("Masukkan Kode buku yang dicari : ");
         System.out.println("Kode Buku : ");
-        int cari =  s.nextInt();
+        int cari = s.nextInt();
+        System.out.println("=============================");
         System.out.println("Menggunakan Sequential Search");
-        int posisi  = data.FindSeqSearch(cari);
+        int posisi = data.FindSeqSearch(cari);
+        Buku dataBuku = data.FindBuku(cari);
         data.tampilPosisi(cari, posisi);
         data.tampilData(cari, posisi);
-        Buku dataBuku = data.FindBuku(cari);
         dataBuku.tampilDataBuku();
     }
 }
-
-
