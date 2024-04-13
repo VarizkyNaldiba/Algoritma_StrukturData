@@ -4,7 +4,7 @@
 
 ## 6.2 Searching / Pencarian Menggunakan Agoritma Sequential Search
 
-### Hasil Searching
+### Hasil Verifikasi Sequential Search
 
 - Data Keseluruhan
 > ![alt text](image-2.png)
@@ -32,4 +32,7 @@
         return null;
     }
 ```
-- 
+## 6.3 Searching / Pencarian Menggunakan Binary Search
+
+### Hasil Verifikasi Binary Search
+![alt text](image-5.png)
