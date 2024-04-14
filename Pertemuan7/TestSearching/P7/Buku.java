@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class Buku {
-    int kodeBuku;
+    String kodeBuku;
     String judulBuku;
     int tahunTerbit;
     String pengarang;
     int stock;
 
-    public Buku(int k, String j, int t, String p, int s) {
+    public Buku(String k, String j, int t, String p, int s) {
         kodeBuku = k;
         judulBuku = j;
         tahunTerbit = t;
@@ -18,7 +18,7 @@ public class Buku {
     void tampilDataBuku() {
         System.out.println("===============");
         System.out.println("Kode Buku = " + kodeBuku);
-        System.out.println("Judul Buku =  " + judulBuku);
+        System.out.println("Judul Buku = " + judulBuku);
         System.out.println("Tahun = " + tahunTerbit);
         System.out.println("Pengarang = " + pengarang);
         System.out.println("Stock = " + stock);
@@ -47,10 +47,10 @@ class PencarianBuku28 {
         }
     }
 
-    int FindSeqSearch(int cari) {
+    int FindSeqSearchKode(String cari) {
         int posisi = -1;
         for (int j = 0; j < listBK.length; j++) {
-            if (listBK[j] != null && listBK[j].kodeBuku == cari) {
+            if (listBK[j] != null && listBK[j].kodeBuku.equals(cari)) {
                 posisi = j;
                 break;
             }
@@ -58,56 +58,62 @@ class PencarianBuku28 {
         return posisi;
     }
 
-    void tampilPosisi(int cari, int pos) {
-        if (pos != -1) {
-            System.out.println("Data : " + cari + " ditemukan pada indeks " + pos);
-        } else {
-            System.out.println("Data " + cari + " Tidak Ditemukan ");
-        }
-    }
-
-    void tampilData(int x, int pos) {
-        if (pos != -1 && listBK[pos] != null) {
-            System.out.println("Kode Buku \t : " + x);
-            System.out.println("Judul \t\t : " + listBK[pos].judulBuku);
-            System.out.println("Tahun Terbit\t : " + listBK[pos].tahunTerbit);
-            System.out.println("Pengarang \t : " + listBK[pos].pengarang);
-            System.out.println("Stock  \t\t : " + listBK[pos].stock);
-        } else {
-            System.out.println("Data " + x + " Tidak Ditemukan");
-        }
-    }
-
-    Buku FindBuku(int cari) {
-        for (int j = 0; j < listBK.length; j++) {
-            if (listBK[j] != null && listBK[j].kodeBuku == cari) {
-                return listBK[j];
+    int FindSeqSearchJudul(String cari) {
+        int count = 0;
+        for (int j = 0; j < idx; j++) {
+            if (listBK[j] != null && listBK[j].judulBuku.equals(cari)) {
+                count++;
             }
         }
-        return null;
+        return count;
     }
 
-    int FindBinarySearch(int cari, int left, int right) {
+    int FindBinarySearchKode(String cari, int left, int right) {
         int mid;
         if (right >= left) {
             mid = left + (right - left) / 2;
-            if (cari == listBK[mid].kodeBuku) {
-                return (mid);
-            } else if (listBK[mid].kodeBuku > cari) {
-                return FindBinarySearch(cari, left, mid - 1);
+            if (cari.equals(listBK[mid].kodeBuku)) {
+                return mid;
+            } else if (cari.compareTo(listBK[mid].kodeBuku) < 0) {
+                return FindBinarySearchKode(cari, left, mid - 1);
             } else {
-                return FindBinarySearch(cari, mid + 1, right);
+                return FindBinarySearchKode(cari, mid + 1, right);
             }
         }
         return -1;
     }
+
+    int FindBinarySearchJudul(String cari, int left, int right) {
+        int mid;
+        if (right >= left) {
+            mid = left + (right - left) / 2;
+            if (cari.equals(listBK[mid].judulBuku)) {
+                return mid;
+            } else if (cari.compareTo(listBK[mid].judulBuku) < 0) {
+                return FindBinarySearchJudul(cari, left, mid - 1);
+            } else {
+                return FindBinarySearchJudul(cari, mid + 1, right);
+            }
+        }
+        return -1;
+    }
+
+    void insertionSortJudul() {
+        for (int i = 1; i < idx; i++) {
+            Buku key = listBK[i];
+            int j = i - 1;
+            while (j >= 0 && listBK[j].judulBuku.compareTo(key.judulBuku) > 0) {
+                listBK[j + 1] = listBK[j];
+                j = j - 1;
+            }
+            listBK[j + 1] = key;
+        }
+    }
 }
 
 class main {
-
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        Scanner s1 = new Scanner(System.in);
 
         PencarianBuku28 data = new PencarianBuku28();
         int jumBuku = 5;
@@ -117,42 +123,57 @@ class main {
         for (int i = 0; i < jumBuku; i++) {
             System.out.println("=================");
             System.out.print("Kode Buku \t :");
-            int kodeBuku = s.nextInt();
+            String kodeBuku = s.nextLine();
             System.out.print("Judul Buku \t : ");
-            String judulBuku = s1.nextLine();
+            String judulBuku = s.nextLine();
             System.out.print("Tahun Terbit \t : ");
             int tahunTerbit = s.nextInt();
+            s.nextLine(); // membersihkan karakter newline
             System.out.print("Pengarang \t : ");
-            String pengarang = s1.nextLine();
+            String pengarang = s.nextLine();
             System.out.print("Stock \t \t : ");
             int stock = s.nextInt();
+            s.nextLine(); // membersihkan karakter newline
 
             Buku m = new Buku(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
             data.tambah(m);
-
         }
+
         System.out.println("=========================");
         System.out.println("Data Keseluruhan Buku : ");
         data.tampil();
 
         System.out.println("__________________________");
         System.out.println("Pencarian Data : ");
-        System.out.println("Masukkan Kode buku yang dicari : ");
-        System.out.println("Kode Buku : ");
-        int cari = s.nextInt();
+        System.out.println("Masukkan Judul buku yang dicari : ");
+        System.out.print("Judul Buku : ");
+        String cariJudul = s.nextLine();
         System.out.println("=============================");
         System.out.println("Menggunakan Sequential Search");
-        int posisi = data.FindSeqSearch(cari);
-        Buku dataBuku = data.FindBuku(cari);
-        data.tampilPosisi(cari, posisi);
-        data.tampilData(cari, posisi);
-        
+        int jumlahJudulSeq = data.FindSeqSearchJudul(cariJudul);
+        if (jumlahJudulSeq > 1) {
+            System.out.println("Peringatan: Lebih dari satu buku dengan judul yang sama ditemukan!");
+        } else if (jumlahJudulSeq == 1) {
+            int posisiJudul = data.FindSeqSearchKode(cariJudul);
+            if (posisiJudul >= 0) {
+                System.out.println("Buku ditemukan di posisi: " + posisiJudul);
+                data.listBK[posisiJudul].tampilDataBuku();
+            } else {
+                System.out.println("Buku tidak ditemukan.");
+            }
+        } else {
+            System.out.println("Buku tidak ditemukan.");
+        }
 
         System.out.println("==================================");
         System.out.println("Menggunakan Binary Search");
-        posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
-        data.tampilPosisi(cari, posisi);
-        data.tampilData(cari, posisi);
-        
+        data.insertionSortJudul();
+        int posisiJudulBin = data.FindBinarySearchJudul(cariJudul, 0, jumBuku - 1);
+        if (posisiJudulBin >= 0) {
+            System.out.println("Buku ditemukan di posisi: " + posisiJudulBin);
+            data.listBK[posisiJudulBin].tampilDataBuku();
+        } else {
+            System.out.println("Buku tidak ditemukan.");
+        }
     }
 }
