@@ -1,5 +1,3 @@
-package MergeSortTest;
-
 public class MergeSorting28 {
     public void mergeSort(int[] data) {
         sort(data, 0, data.length - 1);
