@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 /**
  * Gudang28
  */
@@ -77,19 +75,60 @@ public class Gudang28 {
         }
     }
 
-    public String konversiDesimalKeBiner (int kode) {
-        StackKonversi28 stack = new StackKonversi28();
-        while (kode > 0) {
+    public String konversiDesimalKeBiner(int kode) {
+        String hasil = " ";
+        while (kode != 0) {
             int sisa = kode % 2;
-            stack.push(sisa);
+            hasil = sisa + hasil;
             kode = kode / 2;
-
         }
-
-        String biner = new String();
-        while (!stack.isEmpty()) {
-            biner += stack.pop();
-        }
-        return biner;
+        return hasil;
     }
+
+    public Barang28 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            Barang28 barangTerbawah = tumpukkan[0];
+            System.out.println("Barang Terbawah : " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukkan barang kosong");
+            return null;
+        }
+    }
+    
+    public boolean cariBarangByNama(String namaCari) {
+        if (!cekKosong()) {
+            for (int i = top; i >= 0; i--) {
+                if (tumpukkan[i].nama.equals(namaCari)) {
+                    System.out.println("Barang dengan nama " + namaCari + " ditemukan di tumpukkan " + (top - i + 1));
+                    return true;
+                }
+            }
+            System.out.println("Barang dengan nama " + namaCari + " tidak ditemukan di tumpukkan");
+            return false;
+        } else {
+            System.out.println("Tumpukkan barang kosong");
+            return false;
+        }
+    }
+
+    public boolean cariBarangByKode(int kodeCari) {
+        if (!cekKosong()) {
+            for (int i = top; i >= 0; i--) {
+                if (tumpukkan[i].kode == kodeCari) {
+                    System.out.println("Barang dengan kode " + kodeCari + " ditemukan di tumpukkan " + (top - i + 1));
+                    return true;
+                }
+            }
+            System.out.println("Barang dengan kode " + kodeCari + " tidak ditemukan di tumpukkan");
+            return false;
+        } else {
+            System.out.println("Tumpukkan barang kosong");
+            return false;
+        }
+    }
+
+    
+    
+    
 }

@@ -81,8 +81,44 @@ public class Utama28 {
 ![alt text](image.png)
 ### 2.2.3 Pertanyaan 
 1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!
+```java
+public String konversiDesimalKeBiner(int kode) {
+    String hasil = "";
+    while (kode != 0) {
+        int sisa = kode % 2;
+        hasil = sisa + hasil;
+        kode = kode / 2;
+    }
+    return hasil;
+}
+
+```
+> dengan menggunakan while (kode != 0), kita memastikan bahwa konversi dilakukan hingga bilangan desimal menjadi 0, yang sesuai dengan algoritma konversi desimal ke biner yang benar.
+
 2. Jelaskan alur kerja dari method konversiDesimalKeBiner!
+> setiap iterasi akan membagi bilangan desimal (kode) dengan 2 dan menyimpan sisa bagi tersebut sebagai bit biner. Proses ini terus berlanjut sampai bilangan desimal menjadi 0. Setelah itu, bit-binernya akan dikembalikan dalam bentuk string sebagai hasil konversi.
 
 ## 2.3 Percobaan 3: Konversi Notasi Infix ke Postfix
+### Verifikasi Hasil
 ![alt text](image-2.png)
+### 2.3.3 Pertanyaan
+1. Pada method derajat, mengapa return value beberapa case bernilai sama? Apabila return value diubah dengan nilai berbeda-beda setiap case-nya, apa yang terjadi?
+> Jika nilai kembalian dalam metode derajat diubah untuk memberikan nilai yang berbeda untuk setiap operator, maka prioritas operator dalam konversi ekspresi infix ke postfix akan diubah.
+2. Jelaskan alur kerja method konversi!
+- Iterasi melalui setiap karakter dalam ekspresi infix.
+- Jika karakter adalah operand, tambahkan ke ekspresi postfix.
+- Jika karakter adalah tanda kurung buka, masukkan ke dalam stack.
+- Jika karakter adalah tanda kurung tutup, keluarkan operator dari stack dan tambahkan ke ekspresi postfix hingga menemukan tanda kurung buka yang sesuai.
+- Jika karakter adalah operator, keluarkan operator dari stack dan tambahkan ke ekspresi postfix jika operator di atas stack memiliki prioritas yang sama atau lebih tinggi.
+- Masukkan operator saat ini ke dalam stack.
+- Kembalikan ekspresi postfix yang telah dibentuk.
+3. Pada method konversi, apa fungsi dari potongan kode berikut?
+> Potongan kode ini berfungsi untuk menangani karakter tanda kurung buka '(' dalam ekspresi infix. Ketika karakter saat ini dalam iterasi adalah tanda kurung buka, kode ini memanggil metode push(c) untuk memasukkan karakter '(' ke dalam stack.
 ## 2.4 Latihan Praktikum
+* Perhatikan dan gunakan kembali kode program pada Percobaan 1. Tambahkan dua method berikut pada class Gudang:
+1.  Method lihatBarangTerbawah digunakan untuk mengecek barang pada tumpukan terbawah
+
+![alt text](image-3.png)
+
+2.  Method cariBarang digunakan untuk mencari ada atau tidaknya barang berdasarkan kode barangnya atau nama barangnya
+![alt text](image-4.png)
