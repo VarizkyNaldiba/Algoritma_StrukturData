@@ -77,9 +77,12 @@ public class Utama28 {
 5. Commit dan push kode program ke Github
 
 ## 2.2 Percobaan 2: Konversi Kode Barang ke Biner
-### 
-
+### Verifikasi Hasil
+![alt text](image.png)
+### 2.2.3 Pertanyaan 
+1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!
+2. Jelaskan alur kerja dari method konversiDesimalKeBiner!
 
 ## 2.3 Percobaan 3: Konversi Notasi Infix ke Postfix
-
+![alt text](image-2.png)
 ## 2.4 Latihan Praktikum
