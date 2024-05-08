@@ -9,6 +9,7 @@ public class QueueMain {
         System.out.println("2. Antrian keluar");
         System.out.println("3. Cek antrian terdepan");
         System.out.println("4. Cek semua antrian");
+        System.out.println("5. Cek Antrean paling belakang");
         System.out.println("0. Exit");
         System.out.println("------------------");
         
@@ -50,6 +51,9 @@ public class QueueMain {
                     break;
                 case 4:
                     antri.print();
+                    break;
+                case 5:
+                    antri.peekRear();
                     break;
                 case 0:
                     break;
