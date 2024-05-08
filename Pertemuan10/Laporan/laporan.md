@@ -101,7 +101,8 @@ public void peekRear() {
 * Hasil Modifikasi
 ![alt text](image-6.png)
 
-### Tugas
+## Tugas
+
 1. Buatlah program antrian untuk mengilustasikan pesanan disebuah warung. Ketika seorang pembeli akan mengantri, maka dia harus mendaftarkan nama, dan nomor HP seperti yang digambarkan pada Class diagram berikut:
 Method create(), isEmpty(), isFull(), enqueue(), dequeue() dan print(), kegunaannya sama seperti yang telah dibuat pada Praktikum
 • Method peek(): digunakan untuk menampilkan data Pembeli yang berada di posisi antrian paling depan
@@ -109,6 +110,7 @@ Method create(), isEmpty(), isFull(), enqueue(), dequeue() dan print(), kegunaan
 • Method peekPosition(): digunakan untuk menampilkan seorang pembeli (berdasarkan nama) posisi antrian ke berapa
 • Method daftarPembeli(): digunakan untuk menampilkan data seluruh pembeli
 
-- Hasil
+- Hasil.
+
 ![alt text](image-7.png)
 ![alt text](image-8.png)
