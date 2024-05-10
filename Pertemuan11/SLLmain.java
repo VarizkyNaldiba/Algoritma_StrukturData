@@ -6,7 +6,7 @@ public class SLLmain {
         singLL.print();
         singLL.addFirst(890);
         singLL.print();
-        singLL.addLast(760);
+        singLL.addLast(760); 
         singLL.print();
         singLL.addFirst(700);
         singLL.print();
