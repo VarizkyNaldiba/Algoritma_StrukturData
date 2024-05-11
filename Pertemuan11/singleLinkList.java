@@ -9,9 +9,9 @@ public class singleLinkList {
     void print() {
         if (!isEmpty()) {
             node tmp = head;
-            System.out.println("Isi Linked List");
+            System.out.print("Isi Linked List : ");
             while (tmp != null) {
-                System.out.print(tmp.data + "\t");
+                System.out.print(tmp.data + " ");
                 tmp = tmp.next;
             }
             System.out.println("");
@@ -86,10 +86,15 @@ public class singleLinkList {
 
     int getData(int index) {
         node tmp = head;
-        for (int i = 0; i < index + 1; i++) {
+        for (int i = 0; i < index && tmp != null; i++) {
             tmp = tmp.next;
         }
-        return tmp.data;
+        if (tmp == null) {
+            System.out.println("Index melebihi ukuran linked list!");
+            return -1;
+        } else {
+            return tmp.data;
+        }
     }
 
     int indexOf(int key) {
@@ -123,7 +128,7 @@ public class singleLinkList {
             head = tail = null;
         } else {
             node tmp = head;
-            while (tmp.next != null) {
+            while (tmp.next.next != null) {
                 tmp = tmp.next;
             }
             tmp.next = null;
@@ -137,10 +142,10 @@ public class singleLinkList {
         } else {
             node tmp = head;
             while (tmp != null) {
-                if (tmp.data != key && tmp == head ) {
+                if (tmp.data == key && tmp == head ) {
                     removeFirst();
                     break;
-                } else if (tmp.next.data == key ) {
+                } else if (tmp.next != null && tmp.next.data == key ) {
                     tmp.next = tmp.next.next;
                     if(tmp.next == null) {
                         tail = tmp;
@@ -157,14 +162,19 @@ public class singleLinkList {
             removeFirst();
         } else {
             node tmp = head;
-            for (int i = 0; i < index - 1; i++) {
+            for (int i = 0; i < index - 1 && tmp != null; i++) {
                 tmp = tmp.next;
             }
-            tmp.next = tmp.next.next;
-            if (tmp.next == null) {
-                tail = tmp;
-                
+            if (tmp == null) {
+                System.out.println("Index melebihi ukuran linked list!");
+            } else {
+                tmp.next = tmp.next.next;
+                if (tmp.next == null) {
+                    tail = tmp;
+                }
             }
         }
     }
 }
+
+
