@@ -1,3 +1,4 @@
+package Praktikum;
 public class SLLmain {
     public static void main(String[] args) {
         singleLinkList singLL = new singleLinkList();

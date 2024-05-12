@@ -1,3 +1,4 @@
+package Praktikum;
 /**
  * node
  */
@@ -8,9 +9,5 @@ public class node {
     node (int nilai, node berikutnya) {
         data =  nilai;
         next = berikutnya;
-    }
-
-    public node() {
-        
     }
 }

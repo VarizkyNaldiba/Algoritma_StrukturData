@@ -1,3 +1,4 @@
+package Praktikum;
 public class singleLinkList {
 
     node head, tail;
