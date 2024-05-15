@@ -63,13 +63,26 @@ jika sudah memenuhi maka pointer sudah berada pada bagian akhir
 
 4. Jelaskan fungsi kode program berikut ini pada fungsi remove!
 - ![alt text](image-5.png)
+> Untuk menghapus node dari linked list
 
 ## 3
 ### Verifikasi Hasil
 ![alt text](image-6.png)
 ### Pertanyaan 
 1. Jelaskan method size() pada class DoubleLinkedLists!
+> Method size() digunakan untuk mengembalikan jumlah node dalam DoubleLinkedLists.
+ 
 2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke- 1!
+> Untuk mengatur indeks pada double linked lists agar dapat dimulai dari indeks ke-1, kita dapat menggunakan indeksasi dimulai dari 1(kan harusnya dari 0 kalau tanpa indeksasi ).
+Sebagai contoh, kita dapat mengakses node pertama dengan indeks 1, node kedua dengan indeks 2, dan seterusnya.
+Hal ini mempermudah pemahaman dan pengaksesan data dalam double linked lists.
+
 3. Jelaskan perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists!
+> Perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists adalah sebagai berikut:
+* Pada Double Linked Lists, penambahan node dapat dilakukan di depan (head) atau belakang (tail) dari linked list, sedangkan pada Single Linked Lists, penambahan node hanya dapat dilakukan di depan (head).
+* Fungsi Add pada Double Linked Lists memerlukan penyesuaian pointer prev dan next dari node sebelum dan sesudah node yang ditambahkan, sedangkan pada Single Linked Lists, penambahan node hanya memerlukan penyesuaian pointer next dari node sebelumnya.
+* Struktur Double Linked Lists memuat dua pointer, yaitu prev dan next, yang memungkinkan traversal maju dan mundur, sedangkan Single Linked Lists hanya memiliki pointer next untuk traversal maju.
+
 4. Jelaskan perbedaan logika dari kedua kode program di bawah ini!
 ![alt text](image-7.png)
+> Perbedaan logika antara kedua program kode dalam gambar tersebut dapat dijelaskan berdasarkan detail implementasi dan fungsionalitas kode yang disediakan dalam gambar-gambar tersebut.
