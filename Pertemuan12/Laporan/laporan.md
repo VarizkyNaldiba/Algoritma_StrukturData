@@ -1,4 +1,7 @@
-## 1
+# Pertemuan 13 Double Linked Lists
+Nama  : Varizky Naldiba Rimra
+Kelas : TI - 1H
+## Praktikum 1
 ### Verifikasi Hasil 
 - ![alt text](image.png)
 ### Pertanyaan
@@ -36,7 +39,7 @@
 - jelaskan maksud dari bagian yang ditandai dengan kotak kuning.
 > Node sebelumnya dari node current adalah null (artinya current adalah head), maka buatlah node baru dengan item sebagai datanya, prev diatur sebagai null, dan next diarahkan ke node current. Selanjutnya, atur node sebelumnya dari node current yaitu prev menjadi node baru yang telah dibuat. Terakhir, atur head sebagai node baru tersebut.
 
-## 2
+## Praktikum 2
 ### Verifikasi hasil
 - ![alt text](image-3.png)
 ### Pertanyaan
@@ -65,7 +68,7 @@ jika sudah memenuhi maka pointer sudah berada pada bagian akhir
 - ![alt text](image-5.png)
 > Untuk menghapus node dari linked list
 
-## 3
+## Praktikum 3
 ### Verifikasi Hasil
 ![alt text](image-6.png)
 ### Pertanyaan 
@@ -83,6 +86,12 @@ Hal ini mempermudah pemahaman dan pengaksesan data dalam double linked lists.
 * Fungsi Add pada Double Linked Lists memerlukan penyesuaian pointer prev dan next dari node sebelum dan sesudah node yang ditambahkan, sedangkan pada Single Linked Lists, penambahan node hanya memerlukan penyesuaian pointer next dari node sebelumnya.
 * Struktur Double Linked Lists memuat dua pointer, yaitu prev dan next, yang memungkinkan traversal maju dan mundur, sedangkan Single Linked Lists hanya memiliki pointer next untuk traversal maju.
 
-4. Jelaskan perbedaan logika dari kedua kode program di bawah ini!
-![alt text](image-7.png)
-> Perbedaan logika antara kedua program kode dalam gambar tersebut dapat dijelaskan berdasarkan detail implementasi dan fungsionalitas kode yang disediakan dalam gambar-gambar tersebut.
+4. Perbedaan logika dari kedua kode program di bawah ini adalah sebagai berikut:
+1. ![alt text](image-7.png)
+2. ![alt text](image-8.png)
+> Perbedaan antara kedua kode program adalah pada bagian yang mencari node. Kode program pertama menggunakan loop while untuk mencari node dengan item yang diberikan sebagai parameter. Sedangkan kode program kedua menggunakan loop while dan if else untuk mencari node dengan item yang diberikan sebagai parameter.
+
+## 4. Tugas Praktikum
+
+1. Buat program antrian vaksinasi menggunakan queue berbasis double linked list sesuai ilustrasi dan menu di bawah ini!(counter jumlah antrian tersisa di menu cetak(3) dan data orang yang telah divaksinasi di menu Hapus Data(2) harus ada)
+
