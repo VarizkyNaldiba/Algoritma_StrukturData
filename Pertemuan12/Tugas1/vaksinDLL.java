@@ -1,3 +1,4 @@
+package Tugas1;
 public class vaksinDLL {
     Node head;
     int size;

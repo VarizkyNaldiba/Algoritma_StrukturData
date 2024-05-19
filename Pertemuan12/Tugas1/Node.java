@@ -1,3 +1,4 @@
+package Tugas1;
 public class Node {
     int nomor;
     String nama;

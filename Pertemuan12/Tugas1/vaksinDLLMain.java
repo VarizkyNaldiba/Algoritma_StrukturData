@@ -1,3 +1,4 @@
+package Tugas1;
 import java.util.Scanner;
 
 public class vaksinDLLMain {
