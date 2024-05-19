@@ -1,9 +1,10 @@
 package Tugas1;
+
 import java.util.Scanner;
 
-public class vaksinDLLMain {
+public class vaksinMain {
     public static void main(String[] args) throws Exception {
-        vaksinDLL ngantri = new vaksinDLL();
+        vaksin ngantri = new vaksin();
         Scanner sc = new Scanner(System.in);
         int nomor;
         String nama;

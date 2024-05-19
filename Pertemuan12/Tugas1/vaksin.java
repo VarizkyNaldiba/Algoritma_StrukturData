@@ -1,9 +1,10 @@
 package Tugas1;
-public class vaksinDLL {
+
+public class vaksin {
     Node head;
     int size;
 
-    public vaksinDLL() {
+    public vaksin() {
         head = null;
         size = 0;
     }
