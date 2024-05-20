@@ -41,14 +41,5 @@ public class F1SLL {
         }
     }
     
-    public int JmlPoin() {
-        Node current = head;
-        int total = 0;
-        while (current != null) {
-            total += current.data.poin;
-            current = current.next;
-        }
-        return total;
-    }
 }
 

@@ -34,7 +34,7 @@ public class Klasemen {
 
         int pilihan;
         do {
-            System.out.print("\nPilihanmu: ");
+            System.out.print("\nPilihlah Grand Prix yang Anda Inginkan ! (1-23) : ");
             pilihan = sc.nextInt();
 
             switch (pilihan) {
@@ -178,7 +178,7 @@ public class Klasemen {
                     break;
                 case 5:
                     System.out.println("---------------------");
-                    System.out.println("|Grand Prix United States|");
+                    System.out.println("|Grand Prix Miami|");
                     System.out.println("---------------------");
                     Pembalap[] US = {
                             new Pembalap(1, "Max Verstappen", 26),
@@ -477,30 +477,29 @@ public class Klasemen {
                     System.out.println("|Grand Prix Netherlands|");
                     System.out.println("---------------------");
                     Pembalap[] Netherlands = {
-                        new Pembalap(1, "Max Verstappen", 25),
-                        new Pembalap(14, "Fernando Alonso", 19),
-                        new Pembalap(10, "Pierre Gasly", 15),
-                        new Pembalap(11, "Sergio Perez", 12),
-                        new Pembalap(55, "Carlos Sainz", 10),
-                        new Pembalap(44, "Lewis Hamilton", 8),
-                        new Pembalap(4, "Lando Norris", 6),
-                        new Pembalap(23, "Alexander Albon", 4),
-                        new Pembalap(81, "Oscar Piastri", 2),
-                        new Pembalap(31, "Esteban Ocon", 1),
-                        new Pembalap(18, "Lance Stroll", 0),
-                        new Pembalap(27, "Nico Hulkenberg", 0),
-                        new Pembalap(98, "Lawrence Stroll", 0),
-                        new Pembalap(77, "Valtteri Bottas", 0),
-                        new Pembalap(22, "Yuki Tsunoda", 0),
-                        new Pembalap(20, "Kevin Magnussen", 0),
-                        new Pembalap(63, "George Russell", 0),
-                        new Pembalap(24, "Zhou Guanyu", 0),
-                        new Pembalap(16, "Charles Leclerc", 0),
-                        new Pembalap(17, "Nicholas Latifi", 0),
-                        new Pembalap(99, "Antonio Giovinazzi", 0),
-                        new Pembalap(21, "Nyck De Vries", 0),
-                        new Pembalap(31, "Esteban Ocon", 0)
-                        
+                            new Pembalap(1, "Max Verstappen", 25),
+                            new Pembalap(14, "Fernando Alonso", 19),
+                            new Pembalap(10, "Pierre Gasly", 15),
+                            new Pembalap(11, "Sergio Perez", 12),
+                            new Pembalap(55, "Carlos Sainz", 10),
+                            new Pembalap(44, "Lewis Hamilton", 8),
+                            new Pembalap(4, "Lando Norris", 6),
+                            new Pembalap(23, "Alexander Albon", 4),
+                            new Pembalap(81, "Oscar Piastri", 2),
+                            new Pembalap(31, "Esteban Ocon", 1),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(98, "Lawrence Stroll", 0),
+                            new Pembalap(77, "Valtteri Bottas", 0),
+                            new Pembalap(22, "Yuki Tsunoda", 0),
+                            new Pembalap(20, "Kevin Magnussen", 0),
+                            new Pembalap(63, "George Russell", 0),
+                            new Pembalap(24, "Zhou Guanyu", 0),
+                            new Pembalap(16, "Charles Leclerc", 0),
+                            new Pembalap(17, "Nicholas Latifi", 0),
+                            new Pembalap(99, "Antonio Giovinazzi", 0),
+                            new Pembalap(21, "Nyck De Vries", 0),
+                            new Pembalap(31, "Esteban Ocon", 0)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -517,28 +516,27 @@ public class Klasemen {
                     System.out.println("|Grand Prix Italy|");
                     System.out.println("---------------------");
                     Pembalap[] Italy = {
-                        new Pembalap(1, "Max Verstappen", 25),
-                        new Pembalap(11, "Sergio Perez", 18),
-                        new Pembalap(55, "Carlos Sainz", 15),
-                        new Pembalap(16, "Charles Leclerc", 12),
-                        new Pembalap(63, "George Russell", 10),
-                        new Pembalap(44, "Lewis Hamilton", 8),
-                        new Pembalap(23, "Alexander Albon", 6),
-                        new Pembalap(4, "Lando Norris", 4),
-                        new Pembalap(14, "Fernando Alonso", 2),
-                        new Pembalap(77, "Valtteri Bottas", 1),
-                        new Pembalap(98, "Lawrence Stroll", 0),
-                        new Pembalap(81, "Oscar Piastri", 0),
-                        new Pembalap(18, "Lance Stroll", 0),
-                        new Pembalap(21, "Nyck De Vries", 0),
-                        new Pembalap(24, "Zhou Guanyu", 0),
-                        new Pembalap(10, "Pierre Gasly", 0),
-                        new Pembalap(18, "Lance Stroll", 0),
-                        new Pembalap(27, "Nico Hulkenberg", 0),
-                        new Pembalap(20, "Kevin Magnussen", 0),
-                        new Pembalap(31, "Esteban Ocon", 0),
-                        new Pembalap(22, "Yuki Tsunoda", 0)
-                        
+                            new Pembalap(1, "Max Verstappen", 25),
+                            new Pembalap(11, "Sergio Perez", 18),
+                            new Pembalap(55, "Carlos Sainz", 15),
+                            new Pembalap(16, "Charles Leclerc", 12),
+                            new Pembalap(63, "George Russell", 10),
+                            new Pembalap(44, "Lewis Hamilton", 8),
+                            new Pembalap(23, "Alexander Albon", 6),
+                            new Pembalap(4, "Lando Norris", 4),
+                            new Pembalap(14, "Fernando Alonso", 2),
+                            new Pembalap(77, "Valtteri Bottas", 1),
+                            new Pembalap(98, "Lawrence Stroll", 0),
+                            new Pembalap(81, "Oscar Piastri", 0),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(21, "Nyck De Vries", 0),
+                            new Pembalap(24, "Zhou Guanyu", 0),
+                            new Pembalap(10, "Pierre Gasly", 0),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(20, "Kevin Magnussen", 0),
+                            new Pembalap(31, "Esteban Ocon", 0),
+                            new Pembalap(22, "Yuki Tsunoda", 0)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -555,26 +553,24 @@ public class Klasemen {
                     System.out.println("|Grand Prix Singapore|");
                     System.out.println("---------------------");
                     Pembalap[] Singapore = {
-                        new Pembalap(55, "Carlos Sainz", 25),
-new Pembalap(4, "Lando Norris", 18),
-new Pembalap(44, "Lewis Hamilton", 16),
-new Pembalap(16, "Charles Leclerc", 12),
-new Pembalap(1, "Max Verstappen", 10),
-new Pembalap(10, "Pierre Gasly", 8),
-new Pembalap(81, "Oscar Piastri", 6),
-new Pembalap(11, "Sergio Perez", 4),
-new Pembalap(98, "Lawrence Stroll", 2),
-new Pembalap(20, "Kevin Magnussen", 1),
-new Pembalap(23, "Alexander Albon", 0),
-new Pembalap(24, "Zhou Guanyu", 0),
-new Pembalap(27, "Nico Hulkenberg", 0),
-new Pembalap(18, "Lance Stroll", 0),
-new Pembalap(63, "George Russell", 0),
-new Pembalap(77, "Valtteri Bottas", 0),
-new Pembalap(31, "Esteban Ocon", 0),
-new Pembalap(22, "Yuki Tsunoda", 0)
-
-                        
+                            new Pembalap(55, "Carlos Sainz", 25),
+                            new Pembalap(4, "Lando Norris", 18),
+                            new Pembalap(44, "Lewis Hamilton", 16),
+                            new Pembalap(16, "Charles Leclerc", 12),
+                            new Pembalap(1, "Max Verstappen", 10),
+                            new Pembalap(10, "Pierre Gasly", 8),
+                            new Pembalap(81, "Oscar Piastri", 6),
+                            new Pembalap(11, "Sergio Perez", 4),
+                            new Pembalap(98, "Lawrence Stroll", 2),
+                            new Pembalap(20, "Kevin Magnussen", 1),
+                            new Pembalap(23, "Alexander Albon", 0),
+                            new Pembalap(24, "Zhou Guanyu", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(63, "George Russell", 0),
+                            new Pembalap(77, "Valtteri Bottas", 0),
+                            new Pembalap(31, "Esteban Ocon", 0),
+                            new Pembalap(22, "Yuki Tsunoda", 0)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -591,27 +587,26 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     System.out.println("|Grand Prix Japan|");
                     System.out.println("---------------------");
                     Pembalap[] Japan = {
-                        new Pembalap(1, "Max Verstappen", 26),
-                        new Pembalap(4, "Lando Norris", 18),
-                        new Pembalap(81, "Oscar Piastri", 15),
-                        new Pembalap(16, "Charles Leclerc", 12),
-                        new Pembalap(44, "Lewis Hamilton", 10),
-                        new Pembalap(55, "Carlos Sainz", 8),
-                        new Pembalap(63, "George Russell", 6),
-                        new Pembalap(14, "Fernando Alonso", 4),
-                        new Pembalap(31, "Esteban Ocon", 2),
-                        new Pembalap(10, "Pierre Gasly", 1),
-                        new Pembalap(98, "Lawrence Stroll", 0),
-                        new Pembalap(22, "Yuki Tsunoda", 0),
-                        new Pembalap(24, "Zhou Guanyu", 0),
-                        new Pembalap(27, "Nico Hulkenberg", 0),
-                        new Pembalap(20, "Kevin Magnussen", 0),
-                        new Pembalap(23, "Alexander Albon", 0),
-                        new Pembalap(77, "Valtteri Bottas", 0),
-                        new Pembalap(21, "Nyck De Vries", 0),
-                        new Pembalap(18, "Lance Stroll", 0),
-                        new Pembalap(11, "Sergio Perez", 0)
-                        
+                            new Pembalap(1, "Max Verstappen", 26),
+                            new Pembalap(4, "Lando Norris", 18),
+                            new Pembalap(81, "Oscar Piastri", 15),
+                            new Pembalap(16, "Charles Leclerc", 12),
+                            new Pembalap(44, "Lewis Hamilton", 10),
+                            new Pembalap(55, "Carlos Sainz", 8),
+                            new Pembalap(63, "George Russell", 6),
+                            new Pembalap(14, "Fernando Alonso", 4),
+                            new Pembalap(31, "Esteban Ocon", 2),
+                            new Pembalap(10, "Pierre Gasly", 1),
+                            new Pembalap(98, "Lawrence Stroll", 0),
+                            new Pembalap(22, "Yuki Tsunoda", 0),
+                            new Pembalap(24, "Zhou Guanyu", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(20, "Kevin Magnussen", 0),
+                            new Pembalap(23, "Alexander Albon", 0),
+                            new Pembalap(77, "Valtteri Bottas", 0),
+                            new Pembalap(21, "Nyck De Vries", 0),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(11, "Sergio Perez", 0)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -628,28 +623,27 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     System.out.println("|Grand Prix Qatar|");
                     System.out.println("---------------------");
                     Pembalap[] Qatar = {
-                        new Pembalap(1, "Max Verstappen", 26),
-                        new Pembalap(81, "Oscar Piastri", 18),
-                        new Pembalap(4, "Lando Norris", 15),
-                        new Pembalap(63, "George Russell", 12),
-                        new Pembalap(16, "Charles Leclerc", 10),
-                        new Pembalap(14, "Fernando Alonso", 8),
-                        new Pembalap(31, "Esteban Ocon", 6),
-                        new Pembalap(77, "Valtteri Bottas", 4),
-                        new Pembalap(24, "Zhou Guanyu", 2),
-                        new Pembalap(11, "Sergio Perez", 1),
-                        new Pembalap(18, "Lance Stroll", 0),
-                        new Pembalap(10, "Pierre Gasly", 0),
-                        new Pembalap(22, "Alexander Albon", 0),
-                        new Pembalap(20, "Kevin Magnussen", 0),
-                        new Pembalap(23, "Yuki Tsunoda", 0),
-                        new Pembalap(27, "Nico Hulkenberg", 0),
-                        new Pembalap(98, "Lawrence Stroll", 0),
-                        new Pembalap(21, "Nyck De Vries", 0),
-                        new Pembalap(55, "Carlos Sainz", 0),
-                        new Pembalap(44, "Lewis Hamilton", 0),
-                        new Pembalap(99, "Daniel Ricciardo", 0) 
-                        
+                            new Pembalap(1, "Max Verstappen", 26),
+                            new Pembalap(81, "Oscar Piastri", 18),
+                            new Pembalap(4, "Lando Norris", 15),
+                            new Pembalap(63, "George Russell", 12),
+                            new Pembalap(16, "Charles Leclerc", 10),
+                            new Pembalap(14, "Fernando Alonso", 8),
+                            new Pembalap(31, "Esteban Ocon", 6),
+                            new Pembalap(77, "Valtteri Bottas", 4),
+                            new Pembalap(24, "Zhou Guanyu", 2),
+                            new Pembalap(11, "Sergio Perez", 1),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(10, "Pierre Gasly", 0),
+                            new Pembalap(22, "Alexander Albon", 0),
+                            new Pembalap(20, "Kevin Magnussen", 0),
+                            new Pembalap(23, "Yuki Tsunoda", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(98, "Lawrence Stroll", 0),
+                            new Pembalap(21, "Nyck De Vries", 0),
+                            new Pembalap(55, "Carlos Sainz", 0),
+                            new Pembalap(44, "Lewis Hamilton", 0),
+                            new Pembalap(99, "Daniel Ricciardo", 0)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -663,25 +657,24 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     break;
                 case 19:
                     System.out.println("---------------------");
-                    System.out.println("|Grand Prix United|");
+                    System.out.println("|Grand Prix United States|");
                     System.out.println("---------------------");
                     Pembalap[] US2 = {
-                        new Pembalap(1, "Max Verstappen", 25),
-                        new Pembalap(44, "Lewis Hamilton", 0), // Disqualified
-                        new Pembalap(4, "Lando Norris", 18),
-                        new Pembalap(55, "Carlos Sainz", 15),
-                        new Pembalap(11, "Sergio Perez", 12),
-                        new Pembalap(63, "George Russell", 0), // Disqualified
-                        new Pembalap(10, "Pierre Gasly", 10),
-                        new Pembalap(18, "Lance Stroll", 8),
-                        new Pembalap(22, "Yuki Tsunoda", 6),
-                        new Pembalap(2, "Alexander Albon", 5),
-                        new Pembalap(20, "Kevin Magnussen", 2),
-                        new Pembalap(3, "Daniel Ricciardo", 1),
-                        new Pembalap(14, "Fernando Alonso", 0), // Did Not Finish (DNF)
-                        new Pembalap(81, "Oscar Piastri", 0), // Did Not Finish (DNF)
-                        new Pembalap(31, "Esteban Ocon", 0) // Did Not Finish (DNF)
-                        
+                            new Pembalap(1, "Max Verstappen", 25),
+                            new Pembalap(44, "Lewis Hamilton", 0), // Disqualified
+                            new Pembalap(4, "Lando Norris", 18),
+                            new Pembalap(55, "Carlos Sainz", 15),
+                            new Pembalap(11, "Sergio Perez", 12),
+                            new Pembalap(63, "George Russell", 0), // Disqualified
+                            new Pembalap(10, "Pierre Gasly", 10),
+                            new Pembalap(18, "Lance Stroll", 8),
+                            new Pembalap(22, "Yuki Tsunoda", 6),
+                            new Pembalap(2, "Alexander Albon", 5),
+                            new Pembalap(20, "Kevin Magnussen", 2),
+                            new Pembalap(3, "Daniel Ricciardo", 1),
+                            new Pembalap(14, "Fernando Alonso", 0), // Did Not Finish (DNF)
+                            new Pembalap(81, "Oscar Piastri", 0), // Did Not Finish (DNF)
+                            new Pembalap(31, "Esteban Ocon", 0) // Did Not Finish (DNF)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -698,26 +691,25 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     System.out.println("|Grand Prix Mexico|");
                     System.out.println("---------------------");
                     Pembalap[] Mexico = {
-                        new Pembalap(1, "Max Verstappen", 25),
-                        new Pembalap(44, "Lewis Hamilton", 19),
-                        new Pembalap(16, "Charles Leclerc", 15),
-                        new Pembalap(55, "Carlos Sainz", 12),
-                        new Pembalap(4, "Lando Norris", 10),
-                        new Pembalap(63, "George Russell", 8),
-                        new Pembalap(3, "Daniel Ricciardo", 6),
-                        new Pembalap(81, "Oscar Piastri", 4),
-                        new Pembalap(22, "Yuki Tsunoda", 2),
-                        new Pembalap(31, "Esteban Ocon", 1),
-                        new Pembalap(10, "Pierre Gasly", 0),
-                        new Pembalap(23, "Alexander Albon", 0),
-                        new Pembalap(27, "Nico Hulkenberg", 0),
-                        new Pembalap(24, "Zhou Guanyu", 0),
-                        new Pembalap(77, "Valtteri Bottas", 0),
-                        new Pembalap(20, "Kevin Magnussen", 0),
-                        new Pembalap(11, "Sergio Perez", 0), // Did Not Finish (DNF)
-                        new Pembalap(18, "Lance Stroll", 0), // Did Not Finish (DNF)
-                        new Pembalap(14, "Fernando Alonso", 0) // Did Not Finish (DNF)
-                        
+                            new Pembalap(1, "Max Verstappen", 25),
+                            new Pembalap(44, "Lewis Hamilton", 19),
+                            new Pembalap(16, "Charles Leclerc", 15),
+                            new Pembalap(55, "Carlos Sainz", 12),
+                            new Pembalap(4, "Lando Norris", 10),
+                            new Pembalap(63, "George Russell", 8),
+                            new Pembalap(3, "Daniel Ricciardo", 6),
+                            new Pembalap(81, "Oscar Piastri", 4),
+                            new Pembalap(22, "Yuki Tsunoda", 2),
+                            new Pembalap(31, "Esteban Ocon", 1),
+                            new Pembalap(10, "Pierre Gasly", 0),
+                            new Pembalap(23, "Alexander Albon", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(24, "Zhou Guanyu", 0),
+                            new Pembalap(77, "Valtteri Bottas", 0),
+                            new Pembalap(20, "Kevin Magnussen", 0),
+                            new Pembalap(11, "Sergio Perez", 0), // Did Not Finish (DNF)
+                            new Pembalap(18, "Lance Stroll", 0), // Did Not Finish (DNF)
+                            new Pembalap(14, "Fernando Alonso", 0) // Did Not Finish (DNF)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -734,24 +726,23 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     System.out.println("|Grand Prix Brazil|");
                     System.out.println("---------------------");
                     Pembalap[] Brazil = {
-                        new Pembalap(1, "Max Verstappen", 25),
-                        new Pembalap(44, "Lewis Hamilton", 19),
-                        new Pembalap(14, "Fernando Alonso", 15),
-                        new Pembalap(11, "Sergio Perez", 12),
-                        new Pembalap(18, "Lance Stroll", 10),
-                        new Pembalap(55, "Carlos Sainz", 8),
-                        new Pembalap(10, "Pierre Gasly", 6),
-                        new Pembalap(4, "Lando Norris", 4),
-                        new Pembalap(22, "Yuki Tsunoda", 2),
-                        new Pembalap(31, "Esteban Ocon", 1),
-                        new Pembalap(21, "Nyck De Vries", 0), // Did Not Finish (DNF)
-                        new Pembalap(63, "George Russell", 0), // Did Not Finish (DNF)
-                        new Pembalap(77, "Valtteri Bottas", 0), // Did Not Finish (DNF)
-                        new Pembalap(24, "Zhou Guanyu", 0), // Did Not Finish (DNF)
-                        new Pembalap(20, "Kevin Magnussen", 0), // Did Not Finish (DNF)
-                        new Pembalap(23, "Alexander Albon", 0), // Did Not Finish (DNF)
-                        new Pembalap(16, "Charles Leclerc", 0) // Did Not Start (DNS)
-                        
+                            new Pembalap(1, "Max Verstappen", 25),
+                            new Pembalap(44, "Lewis Hamilton", 19),
+                            new Pembalap(14, "Fernando Alonso", 15),
+                            new Pembalap(11, "Sergio Perez", 12),
+                            new Pembalap(18, "Lance Stroll", 10),
+                            new Pembalap(55, "Carlos Sainz", 8),
+                            new Pembalap(10, "Pierre Gasly", 6),
+                            new Pembalap(4, "Lando Norris", 4),
+                            new Pembalap(22, "Yuki Tsunoda", 2),
+                            new Pembalap(31, "Esteban Ocon", 1),
+                            new Pembalap(21, "Nyck De Vries", 0), // Did Not Finish (DNF)
+                            new Pembalap(63, "George Russell", 0), // Did Not Finish (DNF)
+                            new Pembalap(77, "Valtteri Bottas", 0), // Did Not Finish (DNF)
+                            new Pembalap(24, "Zhou Guanyu", 0), // Did Not Finish (DNF)
+                            new Pembalap(20, "Kevin Magnussen", 0), // Did Not Finish (DNF)
+                            new Pembalap(23, "Alexander Albon", 0), // Did Not Finish (DNF)
+                            new Pembalap(16, "Charles Leclerc", 0) // Did Not Start (DNS)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -765,24 +756,23 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     break;
                 case 22:
                     System.out.println("---------------------");
-                    System.out.println("|Grand Prix United States|");
+                    System.out.println("|Grand Prix Las Vegas|");
                     System.out.println("---------------------");
                     Pembalap[] US3 = {
-                        new Pembalap(1, "Max Verstappen", 25),
-                        new Pembalap(16, "Charles Leclerc", 18),
-                        new Pembalap(11, "Sergio Perez", 15),
-                        new Pembalap(31, "Esteban Ocon", 12),
-                        new Pembalap(18, "Lance Stroll", 10),
-                        new Pembalap(55, "Carlos Sainz", 8),
-                        new Pembalap(44, "Lewis Hamilton", 6),
-                        new Pembalap(63, "George Russell", 4),
-                        new Pembalap(14, "Fernando Alonso", 2),
-                        new Pembalap(81, "Oscar Piastri", 2),
-                        new Pembalap(10, "Pierre Gasly", 0),
-                        new Pembalap(22, "Yuki Tsunoda", 0), // Did Not Finish (DNF)
-                        new Pembalap(27, "Nico Hulkenberg", 0), // Did Not Finish (DNF)
-                        new Pembalap(7, "Lando Norris", 0), // Did Not Finish (DNF)
-
+                            new Pembalap(1, "Max Verstappen", 25),
+                            new Pembalap(16, "Charles Leclerc", 18),
+                            new Pembalap(11, "Sergio Perez", 15),
+                            new Pembalap(31, "Esteban Ocon", 12),
+                            new Pembalap(18, "Lance Stroll", 10),
+                            new Pembalap(55, "Carlos Sainz", 8),
+                            new Pembalap(44, "Lewis Hamilton", 6),
+                            new Pembalap(63, "George Russell", 4),
+                            new Pembalap(14, "Fernando Alonso", 2),
+                            new Pembalap(81, "Oscar Piastri", 2),
+                            new Pembalap(10, "Pierre Gasly", 0),
+                            new Pembalap(22, "Yuki Tsunoda", 0), // Did Not Finish (DNF)
+                            new Pembalap(27, "Nico Hulkenberg", 0), // Did Not Finish (DNF)
+                            new Pembalap(7, "Lando Norris", 0), // Did Not Finish (DNF)
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -799,27 +789,26 @@ new Pembalap(22, "Yuki Tsunoda", 0)
                     System.out.println("|Grand Prix Abu Dhabi|");
                     System.out.println("---------------------");
                     Pembalap[] AbuDhabi = {
-                        new Pembalap(1, "Max Verstappen", 26),
-                        new Pembalap(16, "Charles Leclerc", 18),
-                        new Pembalap(63, "George Russell", 15),
-                        new Pembalap(11, "Sergio Perez", 12),
-                        new Pembalap(7, "Lando Norris", 10),
-                        new Pembalap(81, "Oscar Piastri", 8),
-                        new Pembalap(14, "Fernando Alonso", 6),
-                        new Pembalap(22, "Yuki Tsunoda", 4),
-                        new Pembalap(44, "Lewis Hamilton", 2),
-                        new Pembalap(18, "Lance Stroll", 1),
-                        new Pembalap(3, "Daniel Ricciardo", 0),
-                        new Pembalap(31, "Esteban Ocon", 0),
-                        new Pembalap(10, "Pierre Gasly", 0),
-                        new Pembalap(23, "Alexander Albon", 0),
-                        new Pembalap(27, "Nico Hulkenberg", 0),
-                        new Pembalap(18, "Lance Stroll", 0),
-                        new Pembalap(24, "Zhou Guanyu", 0),
-                        new Pembalap(55, "Carlos Sainz", 0), // Did Not Finish (DNF)
-                        new Pembalap(77, "Valtteri Bottas", 0), // Completed the race but 1 lap behind
-                        new Pembalap(20, "Kevin Magnussen", 0) // Completed the race but 1 lap behind
-                        
+                            new Pembalap(1, "Max Verstappen", 26),
+                            new Pembalap(16, "Charles Leclerc", 18),
+                            new Pembalap(63, "George Russell", 15),
+                            new Pembalap(11, "Sergio Perez", 12),
+                            new Pembalap(7, "Lando Norris", 10),
+                            new Pembalap(81, "Oscar Piastri", 8),
+                            new Pembalap(14, "Fernando Alonso", 6),
+                            new Pembalap(22, "Yuki Tsunoda", 4),
+                            new Pembalap(44, "Lewis Hamilton", 2),
+                            new Pembalap(18, "Lance Stroll", 1),
+                            new Pembalap(3, "Daniel Ricciardo", 0),
+                            new Pembalap(31, "Esteban Ocon", 0),
+                            new Pembalap(10, "Pierre Gasly", 0),
+                            new Pembalap(23, "Alexander Albon", 0),
+                            new Pembalap(27, "Nico Hulkenberg", 0),
+                            new Pembalap(18, "Lance Stroll", 0),
+                            new Pembalap(24, "Zhou Guanyu", 0),
+                            new Pembalap(55, "Carlos Sainz", 0), // Did Not Finish (DNF)
+                            new Pembalap(77, "Valtteri Bottas", 0), // Completed the race but 1 lap behind
+                            new Pembalap(20, "Kevin Magnussen", 0) // Completed the race but 1 lap behind
 
                     };
                     // Tambahkan pembalap ke daftar
@@ -832,7 +821,14 @@ new Pembalap(22, "Yuki Tsunoda", 0)
 
                     break;
                 case 24:
-                    System.out.println("\nPuncak klasemen:");
+                    System.out.println("---------------------");
+                    System.out.println("|Grand Prix Puncak Klasemen|");
+                    System.out.println("---------------------");
+                    // Tambahkan pembalap ke daftar
+                    daftarPembalap.printPembalap();
+                    break;
+                case 0:
+                    System.out.println("Terima kasih");
                     break;
                 default:
                     System.out.println("\nPilihan tidak valid");

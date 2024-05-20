@@ -8,4 +8,9 @@ class Pembalap {
         this.nama = nama;
         this.poin = poin;
     }
+
+    public int getSkor() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getSkor'");
+    }
 }
