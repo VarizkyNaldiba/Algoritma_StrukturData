@@ -5,7 +5,7 @@ public class F1SLL {
     public void addPembalap(Pembalap pembalap) {
         Node newNode = new Node(pembalap);
         if (head == null) {
-            head = newNode;
+            head = newNode; 
         } else {
             Node current = head;
             while (current.next != null) {
@@ -39,6 +39,16 @@ public class F1SLL {
             }
             current = current.next;
         }
+    }
+    
+    public int JmlPoin() {
+        Node current = head;
+        int total = 0;
+        while (current != null) {
+            total += current.data.poin;
+            current = current.next;
+        }
+        return total;
     }
 }
 
