@@ -138,5 +138,72 @@ public class BinaryTree28 {
     }
 
     
+    void addRekur(int Data){
+        if (isEmpty()) {
+            root = new Node28(Data);
+        }else {
+            addRecursive(root, Data);
+        }
+    }
+    
+    private void addRecursive(Node28 node, int Data){
+        if (Data < node.Data) {
+            if (node.left == null) {
+                node.left = new Node28(Data);
+            }else{
+                addRecursive(node.left, Data);
+            }
+        }else if (Data > node.Data) {
+            if (node.right == null) {
+                node.right = new Node28(Data);
+            }else{
+                addRecursive(node.right, Data);
+            }
+        }
+    }
+
+    int findMinim() {
+        if (isEmpty()) {
+            System.out.println("Tree is empty");
+        }
+        Node28 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.Data;
+    }
+
+    int findMaxim() {
+        if (isEmpty()) {
+            System.out.println("Tree is empty");
+        }
+        Node28 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.Data;
+    }
+
+    void tampilDataLeaf(Node28 node) {
+        if (node != null) {
+            if (node.left == null && node.right == null) {
+                System.out.print(" " + node.Data);
+            }
+            tampilDataLeaf(node.left);
+            tampilDataLeaf(node.right);
+        }
+    }
+
+    int hitungJmlLeaf(Node28 node) {
+        if (node == null) {
+            return 0;
+        }
+        if (node.left == null && node.right == null) {
+            return 1;
+        }
+        return hitungJmlLeaf(node.left) + hitungJmlLeaf(node.right);
+    }
+
+    
 }
 
