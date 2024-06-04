@@ -51,7 +51,7 @@ public class Graph28 {
             if (list[i].size() > 0) {
                 System.out.println("Gedung " + (char) ('A' + i) + " terhubung dengan : ");
                 for (int j = 0; j < list[i].size(); j++) {
-                    System.out.println((char) ('A' + list[i].get(j)) + " (" + list[i].getJarak(j) + " m), " ) ;
+                    System.out.println((char) ('A' + list[i].get(j)) + " (" + list[i].getJarak(j) + " m)" ) ;
                 }
                 System.out.println(" ");
             }
