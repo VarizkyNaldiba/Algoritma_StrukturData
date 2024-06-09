@@ -11,8 +11,11 @@ public class GraphMain28 {
         gedung.addEdge(3, 4, 10);
         gedung.addEdge(3, 5, 15);
         gedung.addEdge(4, 5, 5);
+        gedung.degree(0);
+        gedung.printGraph();
 
         gedung.removeEdge(1, 3);
         gedung.printGraph();
     }
 }
+
